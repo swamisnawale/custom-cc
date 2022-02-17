@@ -1,38 +1,59 @@
-.App {
+* {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #040d21;
+  background-image: url("./Logos/elipse.png");
+  background-size: cover;
+}
+label {
+  color: #fff;
+}
+
+.userInputs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 24px 100px;
+}
+.cardGallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 24px 100px;
+}
+
+input {
+  background-color: #0c162d;
+  color: #00cfc8;
+  height: 50px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  width: 280px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #202637;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+input:focus {
+  outline: 1px solid #f0d;
+}
+::placeholder {
+  color: rgba(168, 167, 255, 0.226);
+}
+
+h1 {
+  margin: 32px;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  margin-top: -20px;
+  margin-bottom: 48px;
+  color: rgba(255, 255, 255, 0.247);
+  font-size: 20px;
+  text-align: center;
 }

@@ -1,0 +1,66 @@
+.cardBG {
+  border: 5px solid #ff0;
+}
+.cardFrame {
+  margin-bottom: 32px;
+  padding: 16px;
+  height: 180px;
+  min-width: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  transition: 0.4s ease-in-out;
+}
+
+.cardFrame:hover {
+  -webkit-box-shadow: 0px 0px 13.5px 4.5px #b100ff;
+  -moz-box-shadow: 0px 0px 13.5px 4.5px #b100ff;
+  box-shadow: 0px 0px 13.5px 4.5px #b100ff;
+}
+
+span {
+  color: #fff;
+}
+.rowTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topLeft {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+img {
+  display: flex;
+}
+.rowEnd,
+.rowMiddle {
+  margin-top: 36px;
+}
+.name {
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+.cardDetail {
+  display: flex;
+  justify-content: space-between;
+}
+.cardNumber,
+.customerName {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+}
+.rowEnd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rowEnd span {
+  font-size: 13px;
+  font-weight: 500;
+}
