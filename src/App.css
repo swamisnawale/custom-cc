@@ -21,6 +21,7 @@ label {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+
   margin: 24px 100px;
 }
 
@@ -67,5 +68,15 @@ p {
   p {
     margin: -12px 10px 16px;
     font-size: 14px;
+  }
+  .userInputs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 24px 30px;
+    /* background-color: #00cfc8; */
+  }
+  input {
+    width: 300px;
   }
 }
