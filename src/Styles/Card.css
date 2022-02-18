@@ -1,7 +1,18 @@
 .cardBG {
   border: 5px solid #ff0;
 }
+
+.bg-Image {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
 .cardFrame {
+  overflow: hidden;
+  position: relative;
   margin-bottom: 32px;
   padding: 16px;
   height: 180px;
@@ -10,6 +21,7 @@
   background-size: cover;
   border-radius: 16px;
   transition: 0.4s ease-in-out;
+  /* outline: 1px solid #ff0; */
 }
 
 .cardFrame:hover {
@@ -32,9 +44,9 @@ span {
   font-weight: 500;
   text-transform: uppercase;
 }
-img {
+/* img {
   display: flex;
-}
+} */
 .rowEnd,
 .rowMiddle {
   margin-top: 36px;

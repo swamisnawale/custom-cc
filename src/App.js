@@ -1,6 +1,6 @@
 import "./App.css";
 import Card from "./Components/Card";
-import JSONData from "./JSONFolder/ImageDataset.json";
+import JSONData from "./ImageDataset.json";
 
 import { useState } from "react";
 function App() {
@@ -74,7 +74,6 @@ function App() {
                 expiryDate={expiryDate}
                 backgroundImage={key.img}
               />
-              ;
             </div>
           );
         })}

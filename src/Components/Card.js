@@ -1,9 +1,6 @@
 import React from "react";
-// import Chips from "../Images/Chips.svg";
-// import Mastercard from "../Images/Mastercard.svg";
 import Chips from "../Logos/Chips.svg";
-import Mastercard from "../Logos/Mastercard.svg";
-import Stripe from "../Logos/Stripe.svg";
+
 import Visa from "../Logos/Visa.svg";
 
 import "../Styles/Card.css";
@@ -17,10 +14,11 @@ function Card({
 }) {
   return (
     <div>
-      <div
-        className="cardFrame"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-      >
+      <div className="cardFrame">
+        <img
+          src={`${process.env.PUBLIC_URL}${backgroundImage}`}
+          className="bg-Image"
+        />
         <div className="rows">
           <div className="rowTop">
             <span className="topLeft"> {label}</span>
@@ -39,8 +37,6 @@ function Card({
             {/* <div className="cardDetail"> */}
             <span className="customerName">EXP {expiryDate}</span>
             <img src={Visa} className="paymentMethod" />
-
-            {/* </div> */}
           </div>
         </div>
       </div>
